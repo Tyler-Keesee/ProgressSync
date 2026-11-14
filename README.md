@@ -5,7 +5,7 @@
 **ProgressSync** is a streamlined web application designed to help computer repair technicians and IT professionals track daily progress on repair jobs, maintain detailed logs, and synchronize information across devices.
 
 ![Version](https://img.shields.io/badge/version-1.2.0-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
+![License](https://img.shields.io/badge/license-unspecified-lightgrey)
 
 ## 📋 Overview
 
@@ -19,7 +19,7 @@ ProgressSync provides an intuitive interface for documenting repair progress, tr
 - **🏷️ Status Tracking**: Categorize repairs by status (In Progress, Completed, Waiting for Parts, etc.)
 - **📊 Data Export**: Export your logs for reporting and backup
 - **📱 Responsive Design**: Works on desktop and mobile devices
-- **🔄 Git Integration**: Optional automatic commits for version control (see `daily_commit.sh`)
+- **🔄 Git Integration**: Optional automatic commits via the existing `src/scripts/daily_commit.sh` or `src/scripts/daily_commit.bat` (enable deliberately and review the scripts before use).
 
 ## 🚀 Getting Started
 
@@ -34,8 +34,8 @@ ProgressSync provides an intuitive interface for documenting repair progress, tr
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/RescuePC-Repairs/ProgressSync
-cd RescuePC-ProgressSync
+git clone https://github.com/Tyler-Keesee/ProgressSync.git
+cd ProgressSync
 ```
 
 2. **Configuration**
@@ -62,16 +62,13 @@ venv\Scripts\activate
 # On macOS/Linux
 source venv/bin/activate
 
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the Python server (if needed)
+# Run the optional Python command-line log utility (standard library only)
 python main.py
 ```
 
 4. **Open the application**
 
-Open `index.html` in your web browser, or if you're running the Python server, navigate to `http://localhost:8000`.
+Open `index.html` in your web browser. The optional `main.py` is an interactive command-line logging tool, **not** a web server; it does not serve `http://localhost:8000`.
 
 ## 💻 Usage
 
@@ -194,7 +191,7 @@ Contributions are welcome! Please see [CONTRIBUTING.md](assets/CONTRIBUTING.md) 
 
 ## 📜 License
 
-This project is licensed under the MIT License - see [LICENSE.md](assets/LICENSE.md) for details.
+The existing [`assets/LICENSE.md`](assets/LICENSE.md) file is empty, so it does not grant any license. Add an appropriate full license text before describing this repository as MIT-licensed.
 
 ## 🙏 Acknowledgments
 
@@ -204,4 +201,4 @@ This project is licensed under the MIT License - see [LICENSE.md](assets/LICENSE
 
 ---
 
-Made with ❤️ by [RescuePC Repairs] - [Website](https://rescuepc-repairs.github.io/RescuePC-Repair-Toolkit/index.html)
+Made with ❤️ by [RescuePC Repairs](https://www.rescuepcrepairs.com/)
