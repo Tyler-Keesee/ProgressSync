@@ -19,7 +19,7 @@ ProgressSync provides an intuitive interface for documenting repair progress, tr
 - **🏷️ Status Tracking**: Categorize repairs by status (In Progress, Completed, Waiting for Parts, etc.)
 - **📊 Data Export**: Export your logs for reporting and backup
 - **📱 Responsive Design**: Works on desktop and mobile devices
-- **🔄 Git Integration**: Optional automatic commits for version control (see `daily_commit.sh`)
+- **🔄 Git Integration**: Planned optional automatic commits; `daily_commit.sh` is not included in the current repository.
 
 ## 🚀 Getting Started
 
@@ -34,8 +34,8 @@ ProgressSync provides an intuitive interface for documenting repair progress, tr
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/RescuePC-Repairs/ProgressSync
-cd RescuePC-ProgressSync
+git clone https://github.com/Tyler-Keesee/ProgressSync.git
+cd ProgressSync
 ```
 
 2. **Configuration**
@@ -62,16 +62,13 @@ venv\Scripts\activate
 # On macOS/Linux
 source venv/bin/activate
 
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the Python server (if needed)
+# Run the optional Python command-line log utility (standard library only)
 python main.py
 ```
 
 4. **Open the application**
 
-Open `index.html` in your web browser, or if you're running the Python server, navigate to `http://localhost:8000`.
+Open `index.html` in your web browser. The optional `main.py` is an interactive command-line logging tool, **not** a web server; it does not serve `http://localhost:8000`.
 
 ## 💻 Usage
 
