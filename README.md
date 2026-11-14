@@ -201,4 +201,4 @@ This project is licensed under the MIT License - see [LICENSE.md](assets/LICENSE
 
 ---
 
-Made with ❤️ by [RescuePC Repairs] - [Website](https://rescuepc-repairs.github.io/RescuePC-Repair-Toolkit/index.html)
+Made with ❤️ by [RescuePC Repairs](https://www.rescuepcrepairs.com/)
