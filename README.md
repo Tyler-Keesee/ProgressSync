@@ -1,5 +1,30 @@
 # 🛠️ RescuePC Repairs - ProgressSync
 
+## Windows 11: verified launch method, one command at a time
+
+This repository's main UI is a **static website**. You do not need `pip install`, a virtual environment, or an npm build to serve it. Install Git and Python 3, then run:
+
+```powershell
+git clone https://github.com/Tyler-Keesee/ProgressSync.git
+```
+
+```powershell
+Set-Location .\ProgressSync
+```
+
+```powershell
+python -m http.server 8000
+```
+
+Open **http://localhost:8000/** in Edge or Chrome while the server runs; press **Ctrl+C** to stop it.
+
+**Important:** The browser UI runs statically and stores data in localStorage; `main.py` is a separate standard-library terminal logger, not a web server. The optional `config/env.example` is currently empty and is not necessary to serve the static site.
+
+**Scope of verification:** Serving files is not equivalent to testing every feature, external API, or storage operation. Open Developer Tools (F12) if a feature fails.
+
+---
+
+
 ![RescuePC Logo](assets/logo.png)
 
 **ProgressSync** is a streamlined web application designed to help computer repair technicians and IT professionals track daily progress on repair jobs, maintain detailed logs, and synchronize information across devices.
